@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrebekTools Jeopardy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+        }
+
+        .results {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <button onclick="getRandomQuestions()">Fetch Random Questions</button>
+    <div class="results" id="randomQuestions"></div>
+
+    <button onclick="getFinalQuestions()">Fetch Final Jeopardy Questions</button>
+    <div class="results" id="finalQuestions"></div>
+
+    <button onclick="getCategories()">Fetch Categories</button>
+    <div class="results" id="categories"></div>
+
+    <script src="trebekTools.js"></script>
+</body>
+
+</html>
+
